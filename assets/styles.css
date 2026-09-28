@@ -68,7 +68,7 @@ p { margin: 0 0 1em; }
 .prose p { color: var(--muted); font-size: 1.075rem; }
 
 /* Cards */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.25rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
 .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.75rem; transition: transform .2s, box-shadow .2s, border-color .2s; }
 .card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px -12px rgba(11, 26, 51, .18); border-color: rgba(15, 118, 110, .35); }
 .card-icon { width: 44px; height: 44px; color: var(--teal-deep); margin-bottom: 1rem; }
@@ -92,14 +92,8 @@ p { margin: 0 0 1em; }
 .founder-card li:last-child { margin-bottom: 0; }
 .founder-card li::marker { color: var(--teal-deep); }
 
-.memoriam-card { margin-top: 1.25rem; background: #fafbfc; border-left-color: #94a3b8; }
-.memoriam-card .founder-name { color: #334155; }
-.memoriam-tag { font-family: var(--sans); font-size: .9rem; font-weight: 400; color: #64748b; font-style: italic; }
-.prose .memoriam-card .founder-role { color: #64748b; }
-.prose .memoriam-card .memoriam-text { margin: 0; color: var(--muted); font-size: .98rem; }
-
-/* Portfolio */
-.portfolio-grid { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.25rem; }
+/* Strategic partners */
+.partners-grid { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.25rem; }
 .wordmark { display: flex; align-items: center; justify-content: center; min-height: 120px; padding: 1.5rem 1rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--navy); text-align: center; letter-spacing: .01em; word-break: break-word; }
 .wordmark:lang(zh-Hans) { font-family: "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "Source Han Sans SC", sans-serif; letter-spacing: .08em; }
 .section-dark a { color: var(--teal); }
@@ -156,3 +150,25 @@ p { margin: 0 0 1em; }
   .cards { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+.partners-note { margin-top: 1.5rem; color: var(--muted); font-size: .9rem; max-width: 70ch; }
+
+
+.hero-vision { margin-top: 1.25rem; color: #e2e8f0; font-family: var(--serif); font-size: clamp(1.05rem, 1.8vw, 1.2rem); }
+.hero-vision span { font-family: var(--sans); text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; font-weight: 600; color: var(--teal); margin-right: .6rem; }
+
+#offer .cards { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.soon { display: inline-block; margin-left: .35rem; padding: .1rem .5rem; border-radius: 999px; background: rgba(15,118,110,.1); color: var(--teal-deep); font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; vertical-align: middle; }
+.fda-note { margin-top: 1.75rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; max-width: 90ch; }
+
+.area-list { list-style: none; padding: 0; margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: .75rem; }
+.area-list li { padding: .7rem 1.25rem; border: 1px solid rgba(15,118,110,.3); border-radius: 999px; background: #fff; color: var(--navy); font-weight: 500; }
+
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2rem; align-items: stretch; }
+.team-grid .founder-card { margin-top: 0; background: #fff; }
+.team-lead { grid-column: 1 / -1; }
+.team-card { display: flex; flex-direction: column; justify-content: center; }
+.prose .founder-card .founder-role, .team-grid .founder-card .founder-role { font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; color: var(--teal-deep); font-weight: 600; margin: .15rem 0 1rem; }
+.team-card { justify-content: flex-start; }
+.team-bio { margin: 0; color: var(--muted); font-size: .95rem; }
+@media (max-width: 860px) { .team-grid { grid-template-columns: 1fr; } .team-lead { grid-column: auto; } }
