@@ -172,3 +172,32 @@ p { margin: 0 0 1em; }
 .team-card { justify-content: flex-start; }
 .team-bio { margin: 0; color: var(--muted); font-size: .95rem; }
 @media (max-width: 860px) { .team-grid { grid-template-columns: 1fr; } .team-lead { grid-column: auto; } }
+
+
+/* Hero R.E.D. block */
+.hero { padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2.5rem, 5vw, 3.5rem); }
+.hero h1 { margin-bottom: .2em; }
+.hero .lede { max-width: 52ch; margin-bottom: .5rem; }
+.hero-vision { margin-top: .75rem; }
+.hero-red { margin-top: 2rem; scroll-margin-top: 90px; }
+.hero-red-title { color: #fff; font-family: var(--serif); font-size: clamp(1.15rem, 2.2vw, 1.5rem); margin-bottom: 1rem; }
+.hero-red-title span { font-family: var(--sans); text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; font-weight: 600; color: var(--teal); margin-right: .75rem; vertical-align: middle; }
+.hero-red-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.hero-red-card { display: flex; gap: 1rem; align-items: flex-start; padding: 1.1rem 1.25rem; border-radius: var(--radius); background: rgba(11,26,51,.72); border: 1px solid rgba(94,234,212,.25); backdrop-filter: blur(6px); }
+.hero-red-letter { font-family: var(--serif); font-size: 2.75rem; line-height: 1; font-weight: 600; color: var(--teal); min-width: 1.6rem; }
+.hero-red-card h3 { color: #fff; font-size: 1rem; margin: .1rem 0 .3rem; }
+.hero-red-card p { color: #cbd5e1; font-size: .9rem; line-height: 1.5; margin: 0; }
+@media (max-width: 860px) {
+  .hero-red-grid { grid-template-columns: 1fr; gap: .6rem; }
+  .hero-red { margin-top: 1rem; }
+  .hero-red-title { margin-bottom: .6rem; }
+  .hero-red-title span { display: block; margin-bottom: .2rem; }
+  .hero-red-card { padding: .75rem 1rem; gap: .85rem; }
+  .hero-red-letter { font-size: 2.1rem; min-width: 1.4rem; }
+  .hero-red-card h3 { font-size: .95rem; margin: 0 0 .15rem; }
+  .hero-red-card p { font-size: .82rem; line-height: 1.45; }
+  .hero h1 { font-size: 2.4rem; }
+  .hero .lede { font-size: 1rem; }
+  .hero-vision { font-size: 1rem; }
+  .hero .eyebrow { margin-bottom: .6rem; font-size: .7rem; }
+}
