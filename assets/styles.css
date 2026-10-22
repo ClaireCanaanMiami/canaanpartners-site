@@ -207,3 +207,31 @@ a.wordmark:hover, a.wordmark:focus-visible { border-color: var(--teal); box-shad
   .hero-vision { font-size: 1rem; }
   .hero .eyebrow { margin-bottom: .6rem; font-size: .7rem; }
 }
+
+/* ---- Light, airy first screen (2026-10 refresh) ---- */
+.site-header { background: rgba(255, 255, 255, .86); border-bottom: 1px solid var(--line); }
+.brand { color: var(--navy); }
+.nav-links a { color: #334155; }
+.nav-links a:hover { color: var(--teal-deep); }
+.nav-links .nav-cta { color: #fff; background: var(--teal-deep); }
+.nav-links .nav-cta:hover { color: #fff; background: #115e59; }
+.nav-toggle span { background: var(--navy); }
+@media (max-width: 860px) { .nav-links { background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 10px 24px rgba(15, 23, 42, .06); } }
+.hero { color: var(--ink); background:
+  radial-gradient(900px 520px at 85% 10%, rgba(94, 234, 212, .22) 0%, rgba(94, 234, 212, 0) 70%),
+  radial-gradient(700px 480px at 5% 95%, rgba(147, 197, 253, .20) 0%, rgba(147, 197, 253, 0) 70%),
+  linear-gradient(180deg, #f3faf9 0%, #f7fbfd 60%, #ffffff 100%);
+  border-bottom: 1px solid var(--line); }
+.hero::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: linear-gradient(90deg, var(--teal-deep), var(--teal), #93c5fd); }
+.hero-network { opacity: .55; }
+.hero-network g[stroke="#5eead4"], .hero-network .helix path { stroke: var(--teal-deep); }
+.hero-network .helix path + path { stroke: #3b82f6; }
+.hero-network .helix g { stroke: #94a3b8; }
+.hero-network g[fill="#5eead4"] { fill: var(--teal-deep); opacity: .5; }
+.hero h1 { color: var(--navy); }
+.hero .lede { color: var(--muted); }
+.hero .eyebrow, .hero-vision span, .hero-red-title span, .hero-red-letter { color: var(--teal-deep); }
+.hero-vision, .hero-red-title { color: var(--navy); }
+.hero-red-card { background: rgba(255, 255, 255, .82); border: 1px solid rgba(15, 118, 110, .18); box-shadow: 0 6px 20px rgba(15, 23, 42, .05); }
+.hero-red-card h3 { color: var(--navy); }
+.hero-red-card p { color: var(--muted); }
